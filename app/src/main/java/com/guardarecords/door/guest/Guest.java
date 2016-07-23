@@ -9,6 +9,7 @@ public class Guest {
     @Column String entry;
     @Column String how;
     @Column double price;
+    @Column long time;
 
     public String getGender() {
         return gender;
@@ -40,5 +41,13 @@ public class Guest {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
     }
 }

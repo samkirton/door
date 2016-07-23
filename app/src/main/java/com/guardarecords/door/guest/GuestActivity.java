@@ -208,7 +208,7 @@ public class GuestActivity extends AppCompatActivity implements GuestView {
 
     @Override
     public void done() {
-
+        finish();
     }
 
     @Override

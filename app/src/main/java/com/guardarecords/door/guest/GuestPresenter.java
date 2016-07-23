@@ -19,6 +19,7 @@ public class GuestPresenter {
         guest.setEntry(entry.toString());
         guest.setHow(how.toString());
         guest.setPrice(price);
+        guest.setTime(System.currentTimeMillis());
 
         Insert.getBuilder()
                 .values(guest)

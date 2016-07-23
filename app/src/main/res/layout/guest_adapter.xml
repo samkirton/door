@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guest_adapter_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/guest_adapter_entry_padding"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/guest_adapter_entry"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/guest_adapter_entry_margin_bottom"
+            android:textSize="@dimen/guest_list_entry_textsize"
+            android:textColor="@color/guest_list_row_1_color"/>
+
+        <TextView
+            android:id="@+id/guest_adapter_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="@dimen/guest_list_row_2_textsize"
+            android:textColor="@color/guest_list_row_2_color"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/guest_adapter_gender"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/guest_list_row_2_textsize"
+            android:textColor="@color/guest_list_row_2_color"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/guest_adapter_timestamp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="@dimen/guest_list_row_2_textsize"
+            android:textColor="@color/guest_list_row_2_color"/>
+
+    </LinearLayout>
+
+</LinearLayout>

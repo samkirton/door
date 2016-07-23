@@ -8,4 +8,11 @@
     <color name="button_unselected">#777777</color>
 
     <color name="guest_list_balance_textcolor">#FFF</color>
+
+    <color name="guest_list_row_1_color">#333333</color>
+    <color name="guest_list_row_2_color">#555555</color>
+
+    <color name="guest_list_row_background_1">#AAEEEEEE</color>
+    <color name="guest_list_row_background_2">#FFFFFF</color>
+
 </resources>

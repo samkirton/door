@@ -13,8 +13,8 @@
             android:id="@+id/guest_list_earnings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="@dimen/guest_list_earnings_height"
+            android:layout_gravity="center"
+            android:textSize="@dimen/guest_list_earnings_textsize"
             android:textColor="@color/guest_list_balance_textcolor"/>
 
     </FrameLayout>
