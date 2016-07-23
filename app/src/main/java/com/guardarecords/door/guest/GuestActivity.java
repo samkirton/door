@@ -1,16 +1,18 @@
-package com.guardarecords.door;
+package com.guardarecords.door.guest;
 
+import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnFocusChange;
 
-import com.guardarecords.door.GuestPresenter.*;
+import com.guardarecords.door.R;
 
 public class GuestActivity extends AppCompatActivity implements GuestView {
 
@@ -206,7 +208,12 @@ public class GuestActivity extends AppCompatActivity implements GuestView {
 
     @Override
     public void done() {
-        // TODO: what happens when done
+
+    }
+
+    @Override
+    public void error() {
+        Toast.makeText(this, "App failure....", Toast.LENGTH_LONG);
     }
 
     private double getCurrency(View entryPrice3) {
@@ -217,31 +224,31 @@ public class GuestActivity extends AppCompatActivity implements GuestView {
         }
     }
 
-    private Gender getGender(View male) {
+    private GuestPresenter.Gender getGender(View male) {
         if (male.isSelected()) {
-            return Gender.MALE;
+            return GuestPresenter.Gender.MALE;
         }
 
-        return Gender.FEMALE;
+        return GuestPresenter.Gender.FEMALE;
     }
 
-    private Entry getEntry(View guest, View concession) {
+    private GuestPresenter.Entry getEntry(View guest, View concession) {
         if (guest.isSelected()) {
-            return Entry.GUEST;
+            return GuestPresenter.Entry.GUEST;
         } else if (concession.isSelected()) {
-            return Entry.CONCESSION;
+            return GuestPresenter.Entry.CONCESSION;
         } else {
-            return Entry.DOOR;
+            return GuestPresenter.Entry.DOOR;
         }
     }
 
-    private How getHow(View socialMedia, View friend) {
+    private GuestPresenter.How getHow(View socialMedia, View friend) {
         if (socialMedia.isSelected()) {
-            return How.SOCIAL_MEDIA;
+            return GuestPresenter.How.SOCIAL_MEDIA;
         } else if (friend.isSelected()) {
-            return How.FRIEND;
+            return GuestPresenter.How.FRIEND;
         } else {
-            return How.OTHER;
+            return GuestPresenter.How.OTHER;
         }
     }
 }

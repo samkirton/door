@@ -6,4 +6,6 @@
     <color name="colorAccentDimmed">#99ff954c</color>
 
     <color name="button_unselected">#777777</color>
+
+    <color name="guest_list_balance_textcolor">#FFF</color>
 </resources>
