@@ -24,6 +24,6 @@
     <string name="guest_button_done">Done</string>
 
     <string name="guest_list_earnings">£%s</string>
-    <string name="guest_list_menu_add">Add</string>
+    <string name="guest_list_menu_add">Add guest</string>
 
 </resources>
