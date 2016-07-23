@@ -1,0 +1,14 @@
+<resources>
+
+    <dimen name="guest_content_padding">12dp</dimen>
+
+    <dimen name="guest_how_other_margin_top">4dp</dimen>
+
+    <dimen name="guest_content_margin_bottom">24dp</dimen>
+
+    <dimen name="guest_edittext_padding">8dp</dimen>
+
+    <dimen name="guest_done_padding">12dp</dimen>
+    <dimen name="guest_done_textsize">16sp</dimen>
+
+</resources>

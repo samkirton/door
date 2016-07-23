@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BKR</string>
+
+    <string name="guest_gender_label">Gender</string>
+    <string name="guest_gender_male">Male</string>
+    <string name="guest_gender_female">Female</string>
+
+    <string name="guest_entry_label">Entry type</string>
+    <string name="guest_entry_guest">Guest</string>
+    <string name="guest_entry_concession">Session</string>
+    <string name="guest_entry_door">Door</string>
+
+    <string name="guest_how_label">How?</string>
+    <string name="guest_how_social">Social</string>
+    <string name="guest_how_friend">Friend</string>
+    <string name="guest_how_other">Other</string>
+
+    <string name="guest_price_3">£3</string>
+    <string name="guest_price_5">£5</string>
+
+    <string name="guest_entry_price_label">Entry price</string>
+    <string name="guest_entry_price">Entry charged...</string>
+
+    <string name="guest_button_done">Done</string>
+
+</resources>
