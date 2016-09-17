@@ -1,179 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/guest_content_padding"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/guest_gender_label"
-            style="@style/Label"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/guest_gender_male"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_gender_male"
-                style="@style/Selector"/>
+                android:text="@string/guest_gender_label"
+                style="@style/Label"/>
 
-            <TextView
-                android:id="@+id/guest_gender_female"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_gender_female"
-                style="@style/Selector"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/guest_gender_male"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_gender_male"
+                    style="@style/Selector"/>
+
+                <TextView
+                    android:id="@+id/guest_gender_female"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_gender_female"
+                    style="@style/Selector"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/guest_entry_label"
-            style="@style/Label"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/guest_entry_guest"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_entry_guest"
-                style="@style/Selector"/>
+                android:text="@string/guest_entry_label"
+                style="@style/Label"/>
 
-            <TextView
-                android:id="@+id/guest_entry_concession"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_entry_concession"
-                style="@style/Selector"/>
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/guest_entry_door"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/guest_entry_door"
-                style="@style/Selector"/>
+                <TextView
+                    android:id="@+id/guest_entry_guest"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_entry_guest"
+                    style="@style/Selector"/>
+
+                <TextView
+                    android:id="@+id/guest_entry_concession"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_entry_concession"
+                    style="@style/Selector"/>
+
+                <TextView
+                    android:id="@+id/guest_entry_door"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_entry_door"
+                    style="@style/Selector"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/guest_how_label"
-            style="@style/Label"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/guest_how_social_media"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_how_social"
-                style="@style/Selector"/>
+                android:text="@string/guest_how_label"
+                style="@style/Label"/>
 
-            <TextView
-                android:id="@+id/guest_how_friend"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_how_friend"
-                style="@style/Selector"/>
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/guest_how_other"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/guest_how_other"
-                style="@style/Selector"/>
+                <TextView
+                    android:id="@+id/guest_how_social_media"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_how_social"
+                    style="@style/Selector"/>
+
+                <TextView
+                    android:id="@+id/guest_how_friend"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_how_friend"
+                    style="@style/Selector"/>
+
+                <TextView
+                    android:id="@+id/guest_how_other"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_how_other"
+                    style="@style/Selector"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/guest_content_margin_bottom"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/guest_entry_price_label"
-            style="@style/Label"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginBottom="@dimen/guest_content_margin_bottom"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/guest_price_3"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_price_3"
-                style="@style/Selector"/>
+                android:text="@string/guest_entry_price_label"
+                style="@style/Label"/>
 
-            <TextView
-                android:id="@+id/guest_price_5"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/guest_price_5"
-                style="@style/Selector"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/guest_price_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_price_5"
+                    style="@style/Selector"/>
+
+                <TextView
+                    android:id="@+id/guest_price_5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guest_price_7"
+                    style="@style/Selector"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/guest_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/guest_done_margin"
+            android:layout_marginEnd="@dimen/guest_done_margin"
+            android:padding="@dimen/guest_done_padding"
+            android:textSize="@dimen/guest_done_textsize"
+            android:enabled="false"
+            android:text="@string/guest_button_done"
+            android:textColor="@color/text_color"
+            android:background="@drawable/done_selector"/>
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/guest_done"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/guest_done_padding"
-        android:textSize="@dimen/guest_done_textsize"
-        android:enabled="false"
-        android:text="@string/guest_button_done"
-        android:background="@drawable/done_selector"/>
-
-</LinearLayout>
+</ScrollView>

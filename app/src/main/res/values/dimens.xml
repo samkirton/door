@@ -9,6 +9,7 @@
     <dimen name="guest_edittext_padding">8dp</dimen>
 
     <dimen name="guest_done_padding">12dp</dimen>
+    <dimen name="guest_done_margin">10dp</dimen>
     <dimen name="guest_done_textsize">16sp</dimen>
 
     <dimen name="guest_list_earnings_height">80dp</dimen>

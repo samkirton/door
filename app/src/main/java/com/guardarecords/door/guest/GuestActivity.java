@@ -1,8 +1,8 @@
 package com.guardarecords.door.guest;
 
-import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -63,6 +63,22 @@ public class GuestActivity extends AppCompatActivity implements GuestView {
         ButterKnife.bind(this);
 
         presenter = new GuestPresenter(this);
+
+        entryDoor.setSelected(true);
+        howOther.setSelected(true);
+        entryPrice5.setSelected(true);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @OnClick(R.id.guest_gender_male)
@@ -216,11 +232,11 @@ public class GuestActivity extends AppCompatActivity implements GuestView {
         Toast.makeText(this, "App failure....", Toast.LENGTH_LONG);
     }
 
-    private double getCurrency(View entryPrice3) {
-        if (entryPrice3.isSelected()) {
-            return 3.0;
-        } else {
+    private double getCurrency(View entryPrice5) {
+        if (entryPrice5.isSelected()) {
             return 5.0;
+        } else {
+            return 7.0;
         }
     }
 

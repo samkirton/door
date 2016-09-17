@@ -1,7 +1,5 @@
 package com.guardarecords.door.guest;
 
-import android.content.Intent;
-
 import com.guardarecords.door.App;
 import com.memtrip.sqlking.gen.Q;
 import com.memtrip.sqlking.operation.function.Select;

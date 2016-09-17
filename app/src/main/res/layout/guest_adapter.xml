@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/guest_adapter_entry_margin_bottom"
             android:textSize="@dimen/guest_list_entry_textsize"
-            android:textColor="@color/guest_list_row_1_color"/>
+            android:textColor="@color/text_color"/>
 
         <TextView
             android:id="@+id/guest_adapter_price"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textSize="@dimen/guest_list_row_2_textsize"
-            android:textColor="@color/guest_list_row_2_color"
+            android:textColor="@color/text_color"
             android:textStyle="bold"/>
 
     </LinearLayout>
@@ -44,7 +44,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="@dimen/guest_list_row_2_textsize"
-            android:textColor="@color/guest_list_row_2_color"
+            android:textColor="@color/text_color"
             android:textStyle="bold"/>
 
         <TextView
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textSize="@dimen/guest_list_row_2_textsize"
-            android:textColor="@color/guest_list_row_2_color"/>
+            android:textColor="@color/text_color"/>
 
     </LinearLayout>
 

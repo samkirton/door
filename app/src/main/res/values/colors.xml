@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ffb934</color>
-    <color name="colorPrimaryDark">#ffa700</color>
-    <color name="colorAccent">#ff954c</color>
-    <color name="colorAccentDimmed">#99ff954c</color>
+    <color name="colorPrimary">#06151e</color>
+    <color name="colorAccent">#33FCFAEF</color>
+    <color name="colorAccentDimmed">#06151e</color>
 
-    <color name="button_unselected">#777777</color>
+    <color name="background">#092130</color>
 
-    <color name="guest_list_balance_textcolor">#FFF</color>
+    <color name="button_unselected">#06151e</color>
 
-    <color name="guest_list_row_1_color">#333333</color>
-    <color name="guest_list_row_2_color">#555555</color>
+    <color name="text_color">#FCFAEF</color>
 
-    <color name="guest_list_row_background_1">#AAEEEEEE</color>
-    <color name="guest_list_row_background_2">#FFFFFF</color>
+    <color name="guest_list_row_background_1">#11EEEEEE</color>
+    <color name="guest_list_row_background_2">#22FFFFFF</color>
 
 </resources>

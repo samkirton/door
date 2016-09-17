@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BKR door</string>
+    <string name="app_name">Guarda Records</string>
 
     <string name="guest_gender_label">Gender</string>
     <string name="guest_gender_male">Male</string>
@@ -15,8 +15,8 @@
     <string name="guest_how_friend">Friend</string>
     <string name="guest_how_other">Other</string>
 
-    <string name="guest_price_3">£3</string>
     <string name="guest_price_5">£5</string>
+    <string name="guest_price_7">£7</string>
 
     <string name="guest_entry_price_label">Entry price</string>
     <string name="guest_entry_price">Entry charged...</string>
