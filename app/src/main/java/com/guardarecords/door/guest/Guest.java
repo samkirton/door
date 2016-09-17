@@ -5,11 +5,20 @@ import com.memtrip.sqlking.common.Table;
 
 @Table
 public class Guest {
+    @Column(primary_key = true, auto_increment = true) int id;
     @Column String gender;
     @Column String entry;
     @Column String how;
     @Column double price;
     @Column long time;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getGender() {
         return gender;

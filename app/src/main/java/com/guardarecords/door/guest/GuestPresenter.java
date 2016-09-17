@@ -23,7 +23,7 @@ public class GuestPresenter {
 
         Insert.getBuilder()
                 .values(guest)
-                .rx(Guest.class, App.getInstance().getSQLProvider())
+                .rx(App.getInstance().getSQLProvider())
                 .subscribe(
                         new Action1<Void>() {
                                @Override

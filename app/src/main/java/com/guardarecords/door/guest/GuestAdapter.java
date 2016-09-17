@@ -12,20 +12,35 @@ import com.guardarecords.door.R;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
+import java.util.List;
 import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class GuestAdapter extends RecyclerView.Adapter<GuestAdapter.GuestViewHolder> {
-    private Guest[] guests;
+    private List<Guest> guests;
     private Context context;
+    private Listener listener;
 
-    public GuestAdapter(Context context) {
-        this.context = context;
+    public List<Guest> getGuests() {
+        return guests;
     }
 
-    public void addAll(Guest[] guests) {
+    public GuestAdapter(Context context) {
+        this(context, null);
+    }
+
+    public GuestAdapter(Context context, Listener listener) {
+        this.context = context;
+        this.listener = listener;
+    }
+
+    public interface Listener {
+        void longPress(Guest guest);
+    }
+
+    public void addAll(List<Guest> guests) {
         this.guests = guests;
         notifyDataSetChanged();
     }
@@ -35,18 +50,23 @@ public class GuestAdapter extends RecyclerView.Adapter<GuestAdapter.GuestViewHol
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.guest_adapter, parent, false);
 
-        return new GuestViewHolder(view);
+        return new GuestViewHolder(view, listener);
     }
 
     @Override
     public void onBindViewHolder(GuestViewHolder holder, int position) {
-        Guest comment = guests[position];
+        Guest comment = guests.get(position);
         holder.populate(comment, position, context);
     }
 
     @Override
     public int getItemCount() {
-        return guests != null ? guests.length : 0;
+        return guests != null ? guests.size() : 0;
+    }
+
+    public void remove(Guest guest) {
+        guests.remove(guest);
+        notifyDataSetChanged();
     }
 
     public static class GuestViewHolder extends RecyclerView.ViewHolder {
@@ -68,12 +88,24 @@ public class GuestAdapter extends RecyclerView.Adapter<GuestAdapter.GuestViewHol
         private DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("EEE d MMM hh:mm")
                 .withLocale(Locale.UK);
 
-        public GuestViewHolder(View itemView) {
+        private Guest guest;
+
+        public GuestViewHolder(View itemView, final Listener listener) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+
+            container.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    listener.longPress(guest);
+                    return true;
+                }
+            });
         }
 
         public void populate(Guest guest, int position, Context context) {
+
+            this.guest = guest;
 
             if (position % 2 == 0) {
                 container.setBackgroundColor(context.getResources().getColor(R.color.guest_list_row_background_1));

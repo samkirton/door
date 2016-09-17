@@ -27,8 +27,8 @@ dependencies {
 
     compile 'com.android.support:recyclerview-v7:23.3.0'
 
-    compile 'com.memtrip.sqlking:client:1.0.5'
-    apt 'com.memtrip.sqlking:preprocessor:1.0.4'
+    compile 'com.memtrip.sqlking:client:1.1.5'
+    apt 'com.memtrip.sqlking:preprocessor:1.1.5'
 
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'io.reactivex:rxjava:1.1.3'
